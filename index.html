@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOWANIME - Under Maintenance</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            border: 2px solid #ff0000;
+            border-radius: 10px;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .container::before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: 0;
+            max-width: 800px;
+            height: -webkit-fill-available;
+            width: -webkit-fill-available;
+            margin: auto;
+            box-sizing: border-box;
+            background: url('https://wallpapers.com/images/featured/anime-dbt18qjb7b1cstr1.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.5);
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #ff0000;
+            background-image: linear-gradient(to right, red, white);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        .site-logo {
+            height: 200px;
+        }
+
+        .spinner {
+            border: 16px solid #1c1c1c;
+            border-top: 16px solid #ff0000;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>SHOWANIME</h1>
+        <img class="site-logo" src="./siteLogo.png" alt="">
+        <p>Our site is currently under maintenance. We are working hard to improve your experience. SHOWANIME will be live again within 24 hours</p>
+        <p>We are sorry for your inconvience please check back again later</p>
+    </div>
+</body>
+
+</html>
